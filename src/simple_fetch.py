@@ -6,6 +6,12 @@ from operator import itemgetter
 playerDetailsUrl = 'https://fantasy.premierleague.com/api/bootstrap-static/'
 playerList = urllib.request.urlopen(playerDetailsUrl)
 playersDetailsData = json.loads(playerList.read().decode('utf-8'))
+print(playersDetailsData)
+
+def fetch_player_postion(playersDetail, playerId):
+    return playerDetail
+
+
 events = playersDetailsData['events']
 game_settings = playersDetailsData['game_settings']
 phases = playersDetailsData['phases']
